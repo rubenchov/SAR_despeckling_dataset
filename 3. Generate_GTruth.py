@@ -36,6 +36,6 @@ for imgpath in pathlist:
     img = cv2.imread(imgpath, cv2.IMREAD_GRAYSCALE)  # Image load
     img = img.astype(np.single)
     imgacum = cv2.add(imgacum, img)
-prom = cv2.divide(imgacum, imgscalar)
-prom = prom.astype(np.uint8)
-cv2.imwrite(basepath + 'prom.tiff', prom)
+avgGT = cv2.divide(imgacum, imgscalar)
+avgGT = avgGT.astype(np.uint8)
+cv2.imwrite(basepath + 'AverageGT.tiff', avgGT)
