@@ -1,4 +1,4 @@
-# SAR_despeckling_dataset
+# SARdespecklingdataset
 SAR dataset for despeckling, including actual SAR images and ground truth.
 
 Procedure:
